@@ -1,0 +1,204 @@
+@import "settings";
+@import url(http://fonts.googleapis.com/css?family=Merienda+One);
+@font-face {
+    font-family: 'Sunday';
+    src: url('../fonts/Sunday/sunday.otf');
+    src: url('../fonts/Sunday/sunday.ttf');
+}
+body,
+html {
+    background: #f7eac8 url('../images/bg.png') repeat;
+    z-index: -5;
+}
+h2 {
+    font-family: 'Merienda One', sans-serif;
+    text-transform: uppercase;
+    color: $primary-color;
+}
+h1 {
+    font-family: 'Sunday', 'Merienda One', sans-serif;
+    color: $primary-color;
+}
+h3 {
+    font-family: 'Merienda One', sans-serif;
+    color: $secondary-color;
+}
+h4 {
+    font-family: 'Molengo', helvetica, Arial, sans-serif;
+    color: $secondary-color;
+}
+.title-box {
+    margin: 0 auto;
+    color: $primary-color;
+    padding: 2em;
+}
+.title-box h2 {
+    color: $primary-color;
+}
+.content-block {
+    margin: 0 auto;
+    padding: 1em;
+}
+.ribbon {
+    width: 300px;
+    position: relative;
+    text-align: center;
+    font-size: 20px!important;
+    background: $primary-color;
+    -webkit-box-shadow: rgba(000, 000, 000, 0.3) 0 1px 1px;
+    -moz-box-shadow: rgba(000, 000, 000, 0.3) 0 1px 1px;
+    box-shadow: rgba(000, 000, 000, 0.3) 0 1px 1px;
+    margin: 0 auto 1em;
+}
+.ribbon h1 {
+    font-size: 2em!important;
+    color: $cream;
+    text-shadow: $primary-color-dark 0 1px 0;
+    margin: 0px;
+    padding: 15px 10px;
+}
+.ribbon:before,
+.ribbon:after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid $primary-color-dark;
+    z-index: -1;
+}
+.ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+    -webkit-box-shadow: rgba(000, 000, 000, 0.4) 1px 1px 1px;
+    -moz-box-shadow: rgba(000, 000, 000, 0.4) 1px 1px 1px;
+    box-shadow: rgba(000, 000, 000, 0.4) 1px 1px 1px;
+}
+.ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+    -webkit-box-shadow: rgba(000, 000, 000, 0.4) -1px 1px 1px;
+    -moz-box-shadow: rgba(000, 000, 000, 0.4) -1px 1px 1px;
+    box-shadow: rgba(000, 000, 000, 0.4) -1px 1px 1px;
+}
+.ribbon .ribbon-content:before,
+.ribbon .ribbon-content:after {
+    border-color: #8a0200 transparent transparent transparent;
+    position: absolute;
+    display: block;
+    border-style: solid;
+    bottom: -1em;
+    content: '';
+}
+.ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+}
+.circular {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+}
+.rotate {
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    color: $cream;
+    background: $primary-color-dark;
+    width: 100%;
+    padding: 2em;
+    font-size: .8rem;
+}
+.footer a {
+    color: $cream;
+    font-size: .8rem;
+}
+.border {
+    box-shadow: 0 0 0 3px $primary-color, 0 0 0 6px $cream, 0 0 0 8px $primary-color;
+    margin: 2em auto;
+    padding: 2em;
+    height: 100%;
+}
+.about-section {
+    background: $success-color;
+    color: $secondary-color;
+    padding: 1em;
+}
+.about-section hr {
+    padding: 0;
+    border: none;
+    border-top: medium double $secondary-color;
+    color: $secondary-color;
+    text-align: center;
+}
+.about-section hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -1.3em;
+    font-size: .8em;
+    padding: 0 0.25em;
+    background: $success-color;
+}
+.polaroid {
+    position: relative;
+    width: auto;
+    z-index: 5;
+}
+.polaroid img {
+    border: 10px solid #fff;
+    border-bottom: 45px solid #fff;
+    -webkit-box-shadow: 3px 3px 3px #777;
+    -moz-box-shadow: 3px 3px 3px #777;
+    box-shadow: 3px 3px 3px #777;
+    margin: 0;
+}
+.polaroid p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    font: 400 18px/1'Kaushan Script', cursive;
+    color: #444;
+}
+.triangle {
+    background: url('../images/triangle.svg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.paper-primary p,
+h1,
+h2,
+h3,
+h4,
+h5,
+fill,
+ul,
+li,
+label {
+    color: $secondary-color;
+}
+
+label {
+    font-size: 1em;
+}
