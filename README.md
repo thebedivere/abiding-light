@@ -1,3 +1,1 @@
-## zf5_project
-
-(place your readme here)
+This is a website for a local church
